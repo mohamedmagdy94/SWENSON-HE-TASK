@@ -9,6 +9,7 @@
 import Foundation
 
 protocol CurrencyConverting {
-    func convertAllCurrencies(baseCurrency: String)->GetCurrenciesResponse
+    var baseCurrency: String{get set}
+    func convertAllCurrencies()->GetCurrenciesResponse
     func convertCurrency(localCurrencyAmount: Double,foreignCurrencyAmount: Double)->Double
 }
