@@ -17,5 +17,7 @@ protocol CurrencySelectionViewModeling {
     var shouldShowCountryPicker: Observable<Void>{get}
     var onRequestChangeBaseCountry: Variable<Void>{get}
     var selectedBaseCountry: Variable<String>{get}
+    var isLoading: Observable<Bool>{get}
+    var onError: Observable<String>{get}
     
 }

@@ -12,3 +12,19 @@ import RxSwift
 protocol GetCurrenciesManaging {
     func getCurrencies()->Observable<GetCurrenciesResponse>
 }
+
+struct GetCurrenciesService: GetCurrenciesManaging {
+    private var dataSource: CurrencyDataSourceProtocol
+    
+    init(dataSource: CurrencyDataSourceProtocol) {
+        self.dataSource = dataSource
+    }
+    
+    func getCurrencies() -> Observable<GetCurrenciesResponse> {
+        let getCurrenciesObservable = dataSource.getCurrencies()
+        return getCurrenciesObservable
+    }
+    
+    
+}
+
