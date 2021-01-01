@@ -25,6 +25,8 @@
 		9430CD31259F2D26008D08D5 /* GetCountriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD30259F2D26008D08D5 /* GetCountriesResponse.swift */; };
 		9430CD33259F2D98008D08D5 /* GetCurrenciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD32259F2D98008D08D5 /* GetCurrenciesResponse.swift */; };
 		9430CD37259F2E87008D08D5 /* GetCurrentLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD36259F2E87008D08D5 /* GetCurrentLocale.swift */; };
+		9430CD39259F374A008D08D5 /* CurrencySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD38259F374A008D08D5 /* CurrencySelectionViewModel.swift */; };
+		9430CD3B259F3766008D08D5 /* CurrencyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD3A259F3766008D08D5 /* CurrencyCellViewModel.swift */; };
 		D53C2A254B1E7AF651CEEE22 /* Pods_SWENSON_HE_TASK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9221E75258133E47FFA914B3 /* Pods_SWENSON_HE_TASK.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		9430CD30259F2D26008D08D5 /* GetCountriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesResponse.swift; sourceTree = "<group>"; };
 		9430CD32259F2D98008D08D5 /* GetCurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrenciesResponse.swift; sourceTree = "<group>"; };
 		9430CD36259F2E87008D08D5 /* GetCurrentLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLocale.swift; sourceTree = "<group>"; };
+		9430CD38259F374A008D08D5 /* CurrencySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionViewModel.swift; sourceTree = "<group>"; };
+		9430CD3A259F3766008D08D5 /* CurrencyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellViewModel.swift; sourceTree = "<group>"; };
 		BF82E5A43373F241C2FF291A /* Pods_SWENSON_HE_TASKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWENSON_HE_TASKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,6 +194,8 @@
 		9430CD14259F2438008D08D5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9430CD38259F374A008D08D5 /* CurrencySelectionViewModel.swift */,
+				9430CD3A259F3766008D08D5 /* CurrencyCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -481,6 +487,8 @@
 				9430CD31259F2D26008D08D5 /* GetCountriesResponse.swift in Sources */,
 				9430CD33259F2D98008D08D5 /* GetCurrenciesResponse.swift in Sources */,
 				9430CD1B259F2532008D08D5 /* CurrencySelectionViewController.swift in Sources */,
+				9430CD39259F374A008D08D5 /* CurrencySelectionViewModel.swift in Sources */,
+				9430CD3B259F3766008D08D5 /* CurrencyCellViewModel.swift in Sources */,
 				9430CD1E259F2552008D08D5 /* StoryboardName.swift in Sources */,
 				9430CCE9259F18F0008D08D5 /* AppDelegate.swift in Sources */,
 				9430CCEB259F18F0008D08D5 /* SceneDelegate.swift in Sources */,
