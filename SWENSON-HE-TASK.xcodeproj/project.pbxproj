@@ -27,6 +27,8 @@
 		9430CD37259F2E87008D08D5 /* GetCurrentLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD36259F2E87008D08D5 /* GetCurrentLocale.swift */; };
 		9430CD39259F374A008D08D5 /* CurrencySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD38259F374A008D08D5 /* CurrencySelectionViewModel.swift */; };
 		9430CD3B259F3766008D08D5 /* CurrencyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD3A259F3766008D08D5 /* CurrencyCellViewModel.swift */; };
+		9430CDC5259F3E30008D08D5 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDC4259F3E30008D08D5 /* Coordinating.swift */; };
+		9430CDC7259F3E6A008D08D5 /* CurrencySelectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDC6259F3E6A008D08D5 /* CurrencySelectCoordinator.swift */; };
 		D53C2A254B1E7AF651CEEE22 /* Pods_SWENSON_HE_TASK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9221E75258133E47FFA914B3 /* Pods_SWENSON_HE_TASK.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		9430CD36259F2E87008D08D5 /* GetCurrentLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLocale.swift; sourceTree = "<group>"; };
 		9430CD38259F374A008D08D5 /* CurrencySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionViewModel.swift; sourceTree = "<group>"; };
 		9430CD3A259F3766008D08D5 /* CurrencyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellViewModel.swift; sourceTree = "<group>"; };
+		9430CDC4259F3E30008D08D5 /* Coordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
+		9430CDC6259F3E6A008D08D5 /* CurrencySelectCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectCoordinator.swift; sourceTree = "<group>"; };
 		BF82E5A43373F241C2FF291A /* Pods_SWENSON_HE_TASKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWENSON_HE_TASKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +147,7 @@
 		9430CD0F259F23E6008D08D5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9430CDC3259F3E23008D08D5 /* Base */,
 				9430CD1C259F2541008D08D5 /* Constants */,
 				9430CCF9259F18F2008D08D5 /* Info.plist */,
 				9430CCF1259F18F0008D08D5 /* SWENSON_HE_TASK.xcdatamodeld */,
@@ -203,6 +208,7 @@
 		9430CD15259F243C008D08D5 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				9430CDC6259F3E6A008D08D5 /* CurrencySelectCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -273,6 +279,14 @@
 				9430CD32259F2D98008D08D5 /* GetCurrenciesResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		9430CDC3259F3E23008D08D5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9430CDC4259F3E30008D08D5 /* Coordinating.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		965066449C543C386F163594 /* Frameworks */ = {
@@ -489,12 +503,14 @@
 				9430CD1B259F2532008D08D5 /* CurrencySelectionViewController.swift in Sources */,
 				9430CD39259F374A008D08D5 /* CurrencySelectionViewModel.swift in Sources */,
 				9430CD3B259F3766008D08D5 /* CurrencyCellViewModel.swift in Sources */,
+				9430CDC7259F3E6A008D08D5 /* CurrencySelectCoordinator.swift in Sources */,
 				9430CD1E259F2552008D08D5 /* StoryboardName.swift in Sources */,
 				9430CCE9259F18F0008D08D5 /* AppDelegate.swift in Sources */,
 				9430CCEB259F18F0008D08D5 /* SceneDelegate.swift in Sources */,
 				9430CD2C259F2CB0008D08D5 /* GetCurrenciesService.swift in Sources */,
 				9430CD37259F2E87008D08D5 /* GetCurrentLocale.swift in Sources */,
 				9430CCF3259F18F0008D08D5 /* SWENSON_HE_TASK.xcdatamodeld in Sources */,
+				9430CDC5259F3E30008D08D5 /* Coordinating.swift in Sources */,
 				9430CD20259F2580008D08D5 /* ViewControllerIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
