@@ -10,4 +10,5 @@ import Foundation
 
 enum ViewControllerIdentifier: String{
     case CurrencySelectionViewController = "CurrencySelectionViewController"
+    case CurrencyConvertViewController = "CurrencyConvertViewController"
 }

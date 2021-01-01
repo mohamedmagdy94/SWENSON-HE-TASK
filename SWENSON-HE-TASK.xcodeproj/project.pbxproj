@@ -40,6 +40,8 @@
 		9430CDDF259F4810008D08D5 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDDE259F4810008D08D5 /* Codable.swift */; };
 		9430CDE2259F5324008D08D5 /* CurrencySelectDependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDE1259F5324008D08D5 /* CurrencySelectDependencyInjector.swift */; };
 		9430CDE4259F716D008D08D5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDE3259F716D008D08D5 /* AppCoordinator.swift */; };
+		9475282A259F8E7F0042B007 /* CurrencyConvert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94752829259F8E7F0042B007 /* CurrencyConvert.storyboard */; };
+		9475282C259F8E9D0042B007 /* CurrencyConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475282B259F8E9D0042B007 /* CurrencyConvertViewController.swift */; };
 		D53C2A254B1E7AF651CEEE22 /* Pods_SWENSON_HE_TASK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9221E75258133E47FFA914B3 /* Pods_SWENSON_HE_TASK.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		9430CDDE259F4810008D08D5 /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		9430CDE1259F5324008D08D5 /* CurrencySelectDependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectDependencyInjector.swift; sourceTree = "<group>"; };
 		9430CDE3259F716D008D08D5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		94752829259F8E7F0042B007 /* CurrencyConvert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyConvert.storyboard; sourceTree = "<group>"; };
+		9475282B259F8E9D0042B007 /* CurrencyConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConvertViewController.swift; sourceTree = "<group>"; };
 		BF82E5A43373F241C2FF291A /* Pods_SWENSON_HE_TASKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWENSON_HE_TASKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,6 +188,7 @@
 		9430CD10259F2416008D08D5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				94752827259F8E680042B007 /* CurrencyConvert */,
 				9430CD11259F2421008D08D5 /* CurrencySelect */,
 			);
 			path = Modules;
@@ -362,6 +367,23 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		94752827259F8E680042B007 /* CurrencyConvert */ = {
+			isa = PBXGroup;
+			children = (
+				94752828259F8E720042B007 /* View */,
+			);
+			path = CurrencyConvert;
+			sourceTree = "<group>";
+		};
+		94752828259F8E720042B007 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94752829259F8E7F0042B007 /* CurrencyConvert.storyboard */,
+				9475282B259F8E9D0042B007 /* CurrencyConvertViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		965066449C543C386F163594 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9430CD17259F2479008D08D5 /* CurrencySelection.storyboard in Resources */,
+				9475282A259F8E7F0042B007 /* CurrencyConvert.storyboard in Resources */,
 				9430CCF8259F18F2008D08D5 /* LaunchScreen.storyboard in Resources */,
 				9430CCF5259F18F2008D08D5 /* Assets.xcassets in Resources */,
 			);
@@ -589,6 +612,7 @@
 				9430CCE9259F18F0008D08D5 /* AppDelegate.swift in Sources */,
 				9430CDDB259F46B5008D08D5 /* GetCurrenciesRequest.swift in Sources */,
 				9430CDE4259F716D008D08D5 /* AppCoordinator.swift in Sources */,
+				9475282C259F8E9D0042B007 /* CurrencyConvertViewController.swift in Sources */,
 				9430CCEB259F18F0008D08D5 /* SceneDelegate.swift in Sources */,
 				9430CD2C259F2CB0008D08D5 /* GetCurrenciesService.swift in Sources */,
 				9430CD37259F2E87008D08D5 /* GetCurrentLocale.swift in Sources */,
