@@ -12,6 +12,7 @@ Notes:
 1)Fixer API don't support change base currency on the free plan, so i implemented an extra logic on client side to handle changine base currency.
 2)I didn't provide unit testing for all of code, the provided unit testing is just a sample only.
 3) I implemented stubbers for mocking API responses to make unit testing works offline.
+4) I used a git flow to simulate working with a team on a large project, by making each feature on a seperate branch, and each work in a commit,creating dev branch,mering into dev after completing feature,finally after completing all the work merging into master.
 
 
 
