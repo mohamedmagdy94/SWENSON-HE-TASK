@@ -14,4 +14,8 @@ protocol CurrencySelectionViewModeling {
     var currentCurrencyName: Observable<String>{get}
     var currencies: Observable<[CurrencyCellViewModel]>{get}
     var selectedCurrencyIndex: Variable<Int>{get}
+    var shouldShowCountryPicker: Observable<Void>{get}
+    var onRequestChangeBaseCountry: Variable<Void>{get}
+    var selectedBaseCountry: Variable<String>{get}
+    
 }
