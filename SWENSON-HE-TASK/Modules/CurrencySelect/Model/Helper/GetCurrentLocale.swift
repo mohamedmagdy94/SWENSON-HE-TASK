@@ -8,6 +8,14 @@
 
 import Foundation
 
-protocol GetCurrentLocale {
+protocol GetCurrentLocaleManaging {
     func getCurrentLocale()->String
+}
+
+struct GetCurrentLocale: GetCurrentLocaleManaging{
+    func getCurrentLocale() -> String {
+        let locale = Locale.current
+        return locale.regionCode == "USA" ? "USD" : (locale.regionCode ?? "USD")
+    }
+    
 }

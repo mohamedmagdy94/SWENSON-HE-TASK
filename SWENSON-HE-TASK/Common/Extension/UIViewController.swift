@@ -33,5 +33,10 @@ extension UIViewController: BaseViewProtocol {
     func showSuccess(with message: String?) {
         KRProgressHUD.showSuccess(withMessage: message)
     }
-
+    
+    static func create(storyboardName: String,viewControllerID: String)->UIViewController?{
+        let targetStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let destinationVC = targetStoryboard.instantiateViewController(withIdentifier: viewControllerID)
+        return destinationVC
+    }
 }

@@ -13,7 +13,7 @@ protocol CodableTransforming {
      func decodeObject<T: Codable>(from json: Data,to model: T.Type) -> T?
 }
 
-struct CodableTransformer {
+struct CodableTransformer: CodableTransforming{
     
     func encodeObject<T: Codable>(from model: T) -> Data?{
         let jsonEncoder = JSONEncoder()

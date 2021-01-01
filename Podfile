@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-  platform :ios, '10.0'
+  platform :ios, '13.0'
 
 target 'SWENSON-HE-TASK' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -15,6 +15,9 @@ target 'SWENSON-HE-TASK' do
     pod 'Moya/RxSwift'
     pod 'Hero'
     pod 'SKCountryPicker'
+    pod 'SDWebImageSVGCoder'
+
+
 
   target 'SWENSON-HE-TASKTests' do
     inherit! :search_paths

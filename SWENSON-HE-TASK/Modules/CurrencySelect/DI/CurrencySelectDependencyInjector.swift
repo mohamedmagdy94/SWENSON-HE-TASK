@@ -8,7 +8,21 @@
 
 import Foundation
 import UIKit
+import Moya
 
 protocol CurrencySelectDependencyInjecting {
-    func resolve()->UIViewController
+    func resolve(view: CurrencySelectionViewController)->CurrencySelectionViewController
+}
+
+struct CurrencySelectDependencyInjector: CurrencySelectDependencyInjecting{
+    
+    func resolve(view: CurrencySelectionViewController) -> CurrencySelectionViewController {
+        let countryRemoteDataSource = CountryRemoteDataSource(networkRouter: MoyaProvider<CurrencySelectNetworkRouter>(plugins: [NetworkLoggerPlugin()]), jsonTransformer: CodableTransformer())
+        let currenenciesRemoteDataSource = CurrencyRemoteDataSource(networkRouter: MoyaProvider<CurrencySelectNetworkRouter>(plugins: [NetworkLoggerPlugin()]), jsonTransformer: CodableTransformer())
+        let viewModel = CurrencySelectionViewModel(getCountriesService: GetCounrtiesService(dataSource: countryRemoteDataSource), getCurrenciesService: GetCurrenciesService(dataSource: currenenciesRemoteDataSource), currencyConverter: CurrencyConverter(baseCurrency: "", currencies: nil), getCurrenCountryService: GetCurrentLocale())
+        view.viewModel = viewModel
+        return view
+    }
+    
+    
 }

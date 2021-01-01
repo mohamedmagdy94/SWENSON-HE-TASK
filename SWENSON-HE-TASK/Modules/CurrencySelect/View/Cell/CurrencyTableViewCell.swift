@@ -21,5 +21,14 @@ class CurrencyTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func config(with viewModel: CurrencyCellViewModel){
+        
+        let svgImageSize = CGSize(width: 32, height: 32)
+        currencyImageView.sd_setImage(with: URL(string: viewModel.currencyImageURL), placeholderImage: nil,context: [.imageThumbnailPixelSize : svgImageSize])
+        currencyNameLabel.text = viewModel.currencyName
+        currencyRateLabel.text = viewModel.currencyRate
+        selectionStyle = .none
+    }
 
 }

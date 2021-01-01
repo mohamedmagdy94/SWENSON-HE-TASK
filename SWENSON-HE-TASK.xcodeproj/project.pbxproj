@@ -39,6 +39,7 @@
 		9430CDDD259F4708008D08D5 /* CurrencyRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDDC259F4708008D08D5 /* CurrencyRemoteDataSource.swift */; };
 		9430CDDF259F4810008D08D5 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDDE259F4810008D08D5 /* Codable.swift */; };
 		9430CDE2259F5324008D08D5 /* CurrencySelectDependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDE1259F5324008D08D5 /* CurrencySelectDependencyInjector.swift */; };
+		9430CDE4259F716D008D08D5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDE3259F716D008D08D5 /* AppCoordinator.swift */; };
 		D53C2A254B1E7AF651CEEE22 /* Pods_SWENSON_HE_TASK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9221E75258133E47FFA914B3 /* Pods_SWENSON_HE_TASK.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		9430CDDC259F4708008D08D5 /* CurrencyRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRemoteDataSource.swift; sourceTree = "<group>"; };
 		9430CDDE259F4810008D08D5 /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		9430CDE1259F5324008D08D5 /* CurrencySelectDependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectDependencyInjector.swift; sourceTree = "<group>"; };
+		9430CDE3259F716D008D08D5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		BF82E5A43373F241C2FF291A /* Pods_SWENSON_HE_TASKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWENSON_HE_TASKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -313,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				9430CDC4259F3E30008D08D5 /* Coordinating.swift */,
+				9430CDE3259F716D008D08D5 /* AppCoordinator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				9430CD1E259F2552008D08D5 /* StoryboardName.swift in Sources */,
 				9430CCE9259F18F0008D08D5 /* AppDelegate.swift in Sources */,
 				9430CDDB259F46B5008D08D5 /* GetCurrenciesRequest.swift in Sources */,
+				9430CDE4259F716D008D08D5 /* AppCoordinator.swift in Sources */,
 				9430CCEB259F18F0008D08D5 /* SceneDelegate.swift in Sources */,
 				9430CD2C259F2CB0008D08D5 /* GetCurrenciesService.swift in Sources */,
 				9430CD37259F2E87008D08D5 /* GetCurrentLocale.swift in Sources */,
