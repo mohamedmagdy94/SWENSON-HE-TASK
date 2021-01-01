@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hp6-hF-UPD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="gr9-Bm-sOC">
+            <objects>
+                <navigationController id="hp6-hF-UPD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YU1-dF-t5H">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jXP-mc-uvw" kind="relationship" relationship="rootViewController" id="qG6-4H-TGZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o20-xi-48s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-987" y="32"/>
+        </scene>
+        <!--Currency Selection-->
+        <scene sceneID="cz5-3n-vPd">
+            <objects>
+                <viewController storyboardIdentifier="CurrencySelectionViewController" title="Currency Selection" id="jXP-mc-uvw" customClass="CurrencySelectionViewController" customModule="SWENSON_HE_TASK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Ea-dD-z8B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ab-dc-ygb" userLabel="selectedCurrencyOuterView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="152"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixQ-Kq-O77" userLabel="selectedCurrencyInnerView">
+                                        <rect key="frame" x="78.5" y="8" width="257" height="136"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MDR-nD-BZ8" userLabel="selectedCurrencyMetaData">
+                                                <rect key="frame" x="4" y="4" width="249" height="128"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="wLi-kI-6eQ" userLabel="selectedCurrencyImageView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXD-jS-bVC" userLabel="selectedCurrencyNameLabel">
+                                                        <rect key="frame" x="244" y="0.0" width="5" height="128"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="MDR-nD-BZ8" firstAttribute="leading" secondItem="ixQ-Kq-O77" secondAttribute="leading" constant="4" id="Ndp-tG-aob"/>
+                                            <constraint firstItem="MDR-nD-BZ8" firstAttribute="top" secondItem="ixQ-Kq-O77" secondAttribute="top" constant="4" id="XGT-hv-m2a"/>
+                                            <constraint firstAttribute="trailing" secondItem="MDR-nD-BZ8" secondAttribute="trailing" constant="4" id="mz0-5U-Q4Y"/>
+                                            <constraint firstAttribute="bottom" secondItem="MDR-nD-BZ8" secondAttribute="bottom" constant="4" id="pZr-Cq-rmJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ixQ-Kq-O77" secondAttribute="bottom" constant="8" id="1yI-YA-YJb"/>
+                                    <constraint firstItem="ixQ-Kq-O77" firstAttribute="top" secondItem="8ab-dc-ygb" secondAttribute="top" constant="8" id="Mgv-pq-6pv"/>
+                                    <constraint firstItem="ixQ-Kq-O77" firstAttribute="centerX" secondItem="8ab-dc-ygb" secondAttribute="centerX" id="ZQ7-VY-64B"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jen-PE-zB3" userLabel="currenciesTableView">
+                                <rect key="frame" x="0.0" y="240" width="414" height="622"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CURRENCY_CELL" id="fv1-uS-Iae" customClass="CurrencyTableViewCell" customModule="SWENSON_HE_TASK" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="136.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fv1-uS-Iae" id="95l-za-W18">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="136.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h5t-s8-oe4" userLabel="currencyMetaData">
+                                                    <rect key="frame" x="4" y="4" width="253" height="128.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="hTK-K0-XlN" userLabel="currencyImageView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hF-F0-55v" userLabel="currencyNameLabel">
+                                                            <rect key="frame" x="248" y="0.0" width="5" height="128.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV7-ab-H7h" userLabel="currecyRateLabel">
+                                                    <rect key="frame" x="348" y="58" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="h5t-s8-oe4" firstAttribute="leading" secondItem="95l-za-W18" secondAttribute="leading" constant="4" id="SIK-gu-Isq"/>
+                                                <constraint firstAttribute="bottom" secondItem="h5t-s8-oe4" secondAttribute="bottom" constant="4" id="Vlm-2Y-fbw"/>
+                                                <constraint firstItem="IV7-ab-H7h" firstAttribute="centerY" secondItem="h5t-s8-oe4" secondAttribute="centerY" id="Xnn-W7-nef"/>
+                                                <constraint firstItem="h5t-s8-oe4" firstAttribute="top" secondItem="95l-za-W18" secondAttribute="top" constant="4" id="Y4S-3x-egq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IV7-ab-H7h" secondAttribute="trailing" constant="4" id="avG-xU-trG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="currencyImageView" destination="hTK-K0-XlN" id="PZq-AH-h9v"/>
+                                            <outlet property="currencyNameLabel" destination="1hF-F0-55v" id="cAi-7z-wdt"/>
+                                            <outlet property="currencyRateLabel" destination="IV7-ab-H7h" id="EWN-3O-PqG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5cT-C1-43c" firstAttribute="trailing" secondItem="8ab-dc-ygb" secondAttribute="trailing" id="94P-jW-Vb5"/>
+                            <constraint firstItem="jen-PE-zB3" firstAttribute="leading" secondItem="5cT-C1-43c" secondAttribute="leading" id="Kya-p0-RmY"/>
+                            <constraint firstItem="8ab-dc-ygb" firstAttribute="leading" secondItem="5cT-C1-43c" secondAttribute="leading" id="XbV-eW-n1Q"/>
+                            <constraint firstItem="jen-PE-zB3" firstAttribute="top" secondItem="8ab-dc-ygb" secondAttribute="bottom" id="bJZ-CD-pZv"/>
+                            <constraint firstItem="8ab-dc-ygb" firstAttribute="top" secondItem="5cT-C1-43c" secondAttribute="top" id="eEw-eP-m0e"/>
+                            <constraint firstItem="5cT-C1-43c" firstAttribute="trailing" secondItem="jen-PE-zB3" secondAttribute="trailing" id="laG-av-vxA"/>
+                            <constraint firstItem="5cT-C1-43c" firstAttribute="bottom" secondItem="jen-PE-zB3" secondAttribute="bottom" id="piq-58-R8v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5cT-C1-43c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M7b-Ce-C6a"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="baseCountryView" destination="ixQ-Kq-O77" id="2Gz-d3-Hfm"/>
+                        <outlet property="currenciesTableView" destination="jen-PE-zB3" id="gqS-KS-VbL"/>
+                        <outlet property="selectedCurrencyImageView" destination="wLi-kI-6eQ" id="SbI-KG-dg6"/>
+                        <outlet property="selectedCurrencyNameLabel" destination="eXD-jS-bVC" id="fOA-kN-VAe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSD-SS-NlQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="-111"/>
+        </scene>
+    </scenes>
+</document>

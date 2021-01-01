@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Currency Convert View Controller-->
+        <scene sceneID="hr7-8O-Zen">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyConvertViewController" id="i5p-XW-Nxw" customClass="CurrencyConvertViewController" customModule="SWENSON_HE_TASK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XLD-BD-h8o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9wf-nF-5ru">
+                                <rect key="frame" x="8" y="52" width="398" height="47"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="BaQ-GL-OgM" userLabel="localCurrencyStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="19"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ox1-Gr-C7w" userLabel="localCurrencyValueLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="345.5" height="19"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3U-Vq-32q" userLabel="localCurrencyNameLabel">
+                                                <rect key="frame" x="393.5" y="0.0" width="4.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EZ-vC-0dm" userLabel="borderView">
+                                        <rect key="frame" x="0.0" y="23" width="398" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="8Hf-7Q-DHv"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="eAS-QL-rtb" userLabel="foreignCurrencyStack">
+                                        <rect key="frame" x="0.0" y="28" width="398" height="19"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9tj-Td-98k" userLabel="foreignCurrencyValueLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="345.5" height="19"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNR-Kw-7i5" userLabel="foreignCurrencyNameLabel">
+                                                <rect key="frame" x="393.5" y="0.0" width="4.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9wf-nF-5ru" firstAttribute="top" secondItem="EVn-Z9-rhn" secondAttribute="top" constant="8" id="Cel-mk-voD"/>
+                            <constraint firstItem="EVn-Z9-rhn" firstAttribute="trailing" secondItem="9wf-nF-5ru" secondAttribute="trailing" constant="8" id="Dtf-fO-I74"/>
+                            <constraint firstItem="9wf-nF-5ru" firstAttribute="leading" secondItem="EVn-Z9-rhn" secondAttribute="leading" constant="8" id="qZu-iw-VlO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EVn-Z9-rhn"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="currencyValuesTextFeilds" destination="Ox1-Gr-C7w" collectionClass="NSMutableArray" id="7A0-YX-IyT"/>
+                        <outletCollection property="currencyValuesTextFeilds" destination="9tj-Td-98k" collectionClass="NSMutableArray" id="Pup-Cf-3da"/>
+                        <outletCollection property="currencyTitlesLabels" destination="o3U-Vq-32q" collectionClass="NSMutableArray" id="fAs-Ns-XIL"/>
+                        <outletCollection property="currencyTitlesLabels" destination="zNR-Kw-7i5" collectionClass="NSMutableArray" id="HCI-UX-EVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ2-j3-Vdq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="101"/>
+        </scene>
+    </scenes>
+</document>
