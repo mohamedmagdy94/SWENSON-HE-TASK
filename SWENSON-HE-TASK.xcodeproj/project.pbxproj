@@ -38,6 +38,7 @@
 		9430CDDB259F46B5008D08D5 /* GetCurrenciesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDDA259F46B5008D08D5 /* GetCurrenciesRequest.swift */; };
 		9430CDDD259F4708008D08D5 /* CurrencyRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDDC259F4708008D08D5 /* CurrencyRemoteDataSource.swift */; };
 		9430CDDF259F4810008D08D5 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDDE259F4810008D08D5 /* Codable.swift */; };
+		9430CDE2259F5324008D08D5 /* CurrencySelectDependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CDE1259F5324008D08D5 /* CurrencySelectDependencyInjector.swift */; };
 		D53C2A254B1E7AF651CEEE22 /* Pods_SWENSON_HE_TASK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9221E75258133E47FFA914B3 /* Pods_SWENSON_HE_TASK.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		9430CDDA259F46B5008D08D5 /* GetCurrenciesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrenciesRequest.swift; sourceTree = "<group>"; };
 		9430CDDC259F4708008D08D5 /* CurrencyRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRemoteDataSource.swift; sourceTree = "<group>"; };
 		9430CDDE259F4810008D08D5 /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		9430CDE1259F5324008D08D5 /* CurrencySelectDependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectDependencyInjector.swift; sourceTree = "<group>"; };
 		BF82E5A43373F241C2FF291A /* Pods_SWENSON_HE_TASKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWENSON_HE_TASKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -188,6 +190,7 @@
 		9430CD11259F2421008D08D5 /* CurrencySelect */ = {
 			isa = PBXGroup;
 			children = (
+				9430CDE0259F530B008D08D5 /* DI */,
 				9430CD15259F243C008D08D5 /* Coordinator */,
 				9430CD14259F2438008D08D5 /* ViewModel */,
 				9430CD13259F2434008D08D5 /* View */,
@@ -346,6 +349,14 @@
 				9430CDDA259F46B5008D08D5 /* GetCurrenciesRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		9430CDE0259F530B008D08D5 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				9430CDE1259F5324008D08D5 /* CurrencySelectDependencyInjector.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		965066449C543C386F163594 /* Frameworks */ = {
@@ -561,6 +572,7 @@
 				9430CD2A259F2CA1008D08D5 /* GetCounrtiesService.swift in Sources */,
 				9430CDD5259F40FC008D08D5 /* APIConstant.swift in Sources */,
 				9430CD31259F2D26008D08D5 /* GetCountriesResponse.swift in Sources */,
+				9430CDE2259F5324008D08D5 /* CurrencySelectDependencyInjector.swift in Sources */,
 				9430CD33259F2D98008D08D5 /* GetCurrenciesResponse.swift in Sources */,
 				9430CDD8259F42BF008D08D5 /* CodableTransformer.swift in Sources */,
 				9430CD1B259F2532008D08D5 /* CurrencySelectionViewController.swift in Sources */,
