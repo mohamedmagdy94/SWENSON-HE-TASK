@@ -45,6 +45,7 @@ class CurrencyConvertViewModel: CurrencyConvertViewModeling{
         localCurrencyNameSubject.onNext(currencyConverter.baseCurrency)
         localCurrencyValue.onNext("1.0")
         let foreginCurrencyValue = currencyConverter.convertCurrency(localCurrencyAmount: 1.0, foreginCurrency: foreignCurrency)
+        
         self.foriegnCurrencyValue.onNext("\(foreginCurrencyValue)")
     }
     
@@ -52,11 +53,10 @@ class CurrencyConvertViewModel: CurrencyConvertViewModeling{
         self
             .localCurrencyValue
             .map{ Double($0) ?? 0.0 }
-            .subscribe {[weak self] (newValue) in
-                let foreginCurrencyValue = self?.currencyConverter.convertCurrency(localCurrencyAmount: 1.0, foreginCurrency: self?.foreignCurrency ?? "USD")
+            .subscribe(onNext: {[weak self] (newValue) in
+                let foreginCurrencyValue = self?.currencyConverter.convertCurrency(localCurrencyAmount: newValue, foreginCurrency: self?.foreignCurrency ?? "USD")
                 self?.foriegnCurrencyValue.onNext("\(foreginCurrencyValue ?? 0.0)")
-                
-        }.disposed(by: disposeBag)
+            }).disposed(by: disposeBag)
     }
     
 }
