@@ -19,6 +19,12 @@
 		9430CD1E259F2552008D08D5 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD1D259F2552008D08D5 /* StoryboardName.swift */; };
 		9430CD20259F2580008D08D5 /* ViewControllerIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD1F259F2580008D08D5 /* ViewControllerIdentifier.swift */; };
 		9430CD25259F27DF008D08D5 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD24259F27DF008D08D5 /* CurrencyTableViewCell.swift */; };
+		9430CD2A259F2CA1008D08D5 /* GetCounrtiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD29259F2CA1008D08D5 /* GetCounrtiesService.swift */; };
+		9430CD2C259F2CB0008D08D5 /* GetCurrenciesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD2B259F2CB0008D08D5 /* GetCurrenciesService.swift */; };
+		9430CD2E259F2CBA008D08D5 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD2D259F2CBA008D08D5 /* CurrencyConverter.swift */; };
+		9430CD31259F2D26008D08D5 /* GetCountriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD30259F2D26008D08D5 /* GetCountriesResponse.swift */; };
+		9430CD33259F2D98008D08D5 /* GetCurrenciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD32259F2D98008D08D5 /* GetCurrenciesResponse.swift */; };
+		9430CD37259F2E87008D08D5 /* GetCurrentLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430CD36259F2E87008D08D5 /* GetCurrentLocale.swift */; };
 		D53C2A254B1E7AF651CEEE22 /* Pods_SWENSON_HE_TASK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9221E75258133E47FFA914B3 /* Pods_SWENSON_HE_TASK.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +59,12 @@
 		9430CD1D259F2552008D08D5 /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
 		9430CD1F259F2580008D08D5 /* ViewControllerIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerIdentifier.swift; sourceTree = "<group>"; };
 		9430CD24259F27DF008D08D5 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		9430CD29259F2CA1008D08D5 /* GetCounrtiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCounrtiesService.swift; sourceTree = "<group>"; };
+		9430CD2B259F2CB0008D08D5 /* GetCurrenciesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrenciesService.swift; sourceTree = "<group>"; };
+		9430CD2D259F2CBA008D08D5 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		9430CD30259F2D26008D08D5 /* GetCountriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesResponse.swift; sourceTree = "<group>"; };
+		9430CD32259F2D98008D08D5 /* GetCurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrenciesResponse.swift; sourceTree = "<group>"; };
+		9430CD36259F2E87008D08D5 /* GetCurrentLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLocale.swift; sourceTree = "<group>"; };
 		BF82E5A43373F241C2FF291A /* Pods_SWENSON_HE_TASKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWENSON_HE_TASKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +170,9 @@
 		9430CD12259F2430008D08D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9430CD28259F2C8C008D08D5 /* Helper */,
+				9430CD27259F2C85008D08D5 /* Bussiness */,
+				9430CD26259F2C7F008D08D5 /* Data */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +232,41 @@
 				9430CD24259F27DF008D08D5 /* CurrencyTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9430CD26259F2C7F008D08D5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9430CD2F259F2D11008D08D5 /* Response */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9430CD27259F2C85008D08D5 /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				9430CD29259F2CA1008D08D5 /* GetCounrtiesService.swift */,
+				9430CD2B259F2CB0008D08D5 /* GetCurrenciesService.swift */,
+				9430CD2D259F2CBA008D08D5 /* CurrencyConverter.swift */,
+			);
+			path = Bussiness;
+			sourceTree = "<group>";
+		};
+		9430CD28259F2C8C008D08D5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9430CD36259F2E87008D08D5 /* GetCurrentLocale.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9430CD2F259F2D11008D08D5 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				9430CD30259F2D26008D08D5 /* GetCountriesResponse.swift */,
+				9430CD32259F2D98008D08D5 /* GetCurrenciesResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		965066449C543C386F163594 /* Frameworks */ = {
@@ -426,10 +476,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9430CD25259F27DF008D08D5 /* CurrencyTableViewCell.swift in Sources */,
+				9430CD2E259F2CBA008D08D5 /* CurrencyConverter.swift in Sources */,
+				9430CD2A259F2CA1008D08D5 /* GetCounrtiesService.swift in Sources */,
+				9430CD31259F2D26008D08D5 /* GetCountriesResponse.swift in Sources */,
+				9430CD33259F2D98008D08D5 /* GetCurrenciesResponse.swift in Sources */,
 				9430CD1B259F2532008D08D5 /* CurrencySelectionViewController.swift in Sources */,
 				9430CD1E259F2552008D08D5 /* StoryboardName.swift in Sources */,
 				9430CCE9259F18F0008D08D5 /* AppDelegate.swift in Sources */,
 				9430CCEB259F18F0008D08D5 /* SceneDelegate.swift in Sources */,
+				9430CD2C259F2CB0008D08D5 /* GetCurrenciesService.swift in Sources */,
+				9430CD37259F2E87008D08D5 /* GetCurrentLocale.swift in Sources */,
 				9430CCF3259F18F0008D08D5 /* SWENSON_HE_TASK.xcdatamodeld in Sources */,
 				9430CD20259F2580008D08D5 /* ViewControllerIdentifier.swift in Sources */,
 			);
@@ -586,7 +642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGMD963KYP;
-				INFOPLIST_FILE = "SWENSON-HE-TASK/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SWENSON-HE-TASK/Common/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,7 +661,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGMD963KYP;
-				INFOPLIST_FILE = "SWENSON-HE-TASK/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SWENSON-HE-TASK/Common/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
