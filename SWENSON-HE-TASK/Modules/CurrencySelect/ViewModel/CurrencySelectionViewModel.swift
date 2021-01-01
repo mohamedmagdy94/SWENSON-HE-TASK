@@ -92,7 +92,7 @@ class CurrencySelectionViewModel: CurrencySelectionViewModeling {
     }
     
     func onForeignCountrySelected(with index: Int) {
-        let foreginCountryCode = getCountriesService.filteredCountries[index].alpha3Code
+        let foreginCountryCode = getCountriesService.filteredCountries[index].currencies[0].code ?? "USD"
         navigationDelegate!.navigateToCurrencyConverter(currencyConvertingService: currencyConverter, foreignCurrencyCode: foreginCountryCode)
     }
     

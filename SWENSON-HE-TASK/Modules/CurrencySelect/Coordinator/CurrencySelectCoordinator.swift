@@ -24,7 +24,8 @@ class CurrencySelectCoordinator: CurrencySelectCoordinating {
     }
     
     func navigateToCurrencyConverter(currencyConvertingService: CurrencyConverting, foreignCurrencyCode: String) {
-        
+        let currencyConverterCoordinator = CurrencyConvertCoordinator(navigationController: navigationController, currencyConveter: currencyConvertingService, foreignCurrency: foreignCurrencyCode)
+        currencyConverterCoordinator.start()
     }
     
     func start() {
