@@ -10,4 +10,5 @@ import Foundation
 
 enum StoryboardName: String{
     case CurrencySelection = "CurrencySelection"
+    case CurrencyConvert = "CurrencyConvert"
 }

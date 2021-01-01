@@ -28,6 +28,7 @@ class CurrencyConvertViewModel: CurrencyConvertViewModeling{
     private var foreignCurrency: String
     private var currencyConverter: CurrencyConverting
     private var disposeBag = DisposeBag()
+    private var navigationDelegate: CurrencyConvertCoordinating?
     
     init(foreignCurrency: String,currencyConverter: CurrencyConverting) {
         self.foreignCurrency = foreignCurrency

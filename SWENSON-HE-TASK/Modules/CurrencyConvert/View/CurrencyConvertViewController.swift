@@ -13,11 +13,10 @@ class CurrencyConvertViewController: UIViewController {
     @IBOutlet var currencyValuesTextFeilds: [UITextField]!
     @IBOutlet var currencyTitlesLabels: [UILabel]!
     
+    var viewModel: CurrencyConvertViewModeling?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
 
