@@ -15,7 +15,7 @@ protocol GetCurrentLocaleManaging {
 struct GetCurrentLocale: GetCurrentLocaleManaging{
     func getCurrentLocale() -> String {
         let locale = Locale.current
-        return locale.regionCode == "USA" ? "USD" : (locale.regionCode ?? "USD")
+        return locale.currencyCode ?? "USD"
     }
     
 }
